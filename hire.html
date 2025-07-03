@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hire Me - Manoj Prajapati</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    :root {
+      --dark-clr: #081d2c;
+      --text-clr: #f1f5f9;
+      --accent-clr: #0fbbff;
+      --btn-clr: #ff499e;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: var(--dark-clr);
+      color: var(--text-clr);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: var(--accent-clr);
+      margin-bottom: 10px;
+    }
+
+    p {
+      max-width: 700px;
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .hire-options {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .hire-card {
+      background: #112e42;
+      padding: 20px;
+      border-left: 5px solid var(--accent-clr);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(15, 187, 255, 0.2);
+    }
+
+    .hire-card h3 {
+      margin: 0;
+      color: var(--accent-clr);
+      font-size: 1.5rem;
+    }
+
+    .hire-card p {
+      font-size: 1rem;
+      color: #c9d9e8;
+    }
+
+    .contact-btn {
+      margin-top: 30px;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      background: var(--btn-clr);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      box-shadow: 0 0 10px var(--btn-clr);
+      transition: 0.3s;
+    }
+
+    .contact-btn:hover {
+      background: #ff1e84;
+      box-shadow: 0 0 15px #ff1e84;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hire Me</h1>
+  <p>
+    I'm available for freelance, part-time, and project-based work in the field of Data Science, Web Development, and Analytics. Let's build something great together!
+  </p>
+
+  <div class="hire-options">
+    <div class="hire-card">
+      <h3><i class="fas fa-chart-line"></i> Data Science Projects</h3>
+      <p>Get data-driven insights, machine learning models, or dashboards tailored to your business.</p>
+    </div>
+    <div class="hire-card">
+      <h3><i class="fas fa-code"></i> Web Development</h3>
+      <p>Responsive and modern websites using HTML, CSS, JS and backend integration.</p>
+    </div>
+    <div class="hire-card">
+      <h3><i class="fas fa-pen-nib"></i> Custom Solutions</h3>
+      <p>Need something unique? I’ll bring your ideas to life with clean code and creativity.</p>
+    </div>
+  </div>
+
+  <a href="contact.html" class="contact-btn">Let's Connect</a>
+</body>
+</html>

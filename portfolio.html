@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | Manoj Prajapati</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <style>
+    :root {
+      --dark-bg: #081d2c;
+      --card-bg: #112e42;
+      --highlight: #0fbbff;
+      --text-light: #f1f5f9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--dark-bg);
+      color: var(--text-light);
+    }
+
+    header {
+      padding: 1rem 10%;
+      background-color: var(--card-bg);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--text-light);
+    }
+
+    .logo span {
+      color: var(--highlight);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+      color: var(--highlight);
+    }
+
+    .hero-container {
+      padding: 4rem 10%;
+      text-align: center;
+    }
+
+    .hero-container h1 {
+      font-size: 3rem;
+      color: var(--highlight);
+      margin-bottom: 1rem;
+    }
+
+    .hero-container p {
+      font-size: 1.1rem;
+      color: #cdd6e1;
+      margin-bottom: 3rem;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background-color: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(15, 187, 255, 0.1);
+      transition: 0.3s;
+      text-align: left;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 15px var(--highlight);
+    }
+
+    .project-card h3 {
+      font-size: 1.3rem;
+      color: var(--highlight);
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      color: #dbe7f3;
+    }
+
+    @media(max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Port<span>folio</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-container">
+    <h1>My Projects</h1>
+    <p>Below are some of my best works:</p>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>💰 Expense Tracker Web App</h3>
+        <p>Track income and expenses, generate reports, and set budgets with a responsive frontend + backend.</p>
+      </div>
+      <div class="project-card">
+        <h3>🏠 House Price Prediction</h3>
+        <p>Built a machine learning model to predict house prices using regression algorithms in Python.</p>
+      </div>
+      <div class="project-card">
+        <h3>🎓 Student Management System</h3>
+        <p>Created a CRUD system to manage student data using web technologies and MySQL database.</p>
+      </div>
+      <div class="project-card">
+        <h3>🌐 Personal Portfolio Website</h3>
+        <p>Responsive and animated portfolio website showcasing my projects, skills, and contact links.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

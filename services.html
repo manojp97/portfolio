@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services | Manoj Prajapati</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <style>
+    :root {
+      --dark-bg: #081d2c;
+      --card-bg: #112e42;
+      --highlight: #0fbbff;
+      --text-light: #f1f5f9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--dark-bg);
+      color: var(--text-light);
+    }
+
+    /* Navbar Styles */
+    header {
+      width: 100%;
+      background-color: var(--card-bg);
+      padding: 1.2rem 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--text-light);
+    }
+
+    .logo span {
+      color: var(--highlight);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+      color: var(--highlight);
+    }
+
+    /* Section Layout */
+    .hero-container {
+      padding: 4rem 10%;
+      text-align: center;
+    }
+
+    .hero-container h1 {
+      font-size: 3rem;
+      background: linear-gradient(to right, #0fbbff, #45f3ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 2rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .service-card {
+      background-color: var(--card-bg);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(15, 187, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 0 20px var(--highlight);
+    }
+
+    .service-card i {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: var(--highlight);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover i {
+      transform: rotate(360deg);
+    }
+
+    .service-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: #cdd6e1;
+    }
+
+    @media(max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+
+      .hero-container {
+        padding: 2rem 5%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Port<span>folio</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-container">
+    <h1>Services I Offer</h1>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-broom"></i>
+        <h3>Data Cleaning</h3>
+        <p>Remove inconsistencies, fill missing values, and make your data ready for analysis.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-robot"></i>
+        <h3>Machine Learning</h3>
+        <p>Train predictive models using Python and libraries like scikit-learn and pandas.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-chart-pie"></i>
+        <h3>Visualization</h3>
+        <p>Create informative charts using Matplotlib, Seaborn, and Power BI.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Design responsive websites using HTML, CSS, and JavaScript for modern businesses.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

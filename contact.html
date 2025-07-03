@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Manoj Prajapati</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <style>
+    :root {
+      --dark-bg: #081d2c;
+      --card-bg: #112e42;
+      --highlight: #0fbbff;
+      --text-light: #f1f5f9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--dark-bg);
+      color: var(--text-light);
+    }
+
+    header {
+      padding: 1rem 10%;
+      background-color: var(--card-bg);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--text-light);
+    }
+
+    .logo span {
+      color: var(--highlight);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+      color: var(--highlight);
+    }
+
+    .hero-container {
+      padding: 4rem 10%;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      color: var(--highlight);
+      margin-bottom: 1rem;
+    }
+
+    .contact-info {
+      margin-bottom: 2rem;
+      line-height: 2;
+    }
+
+    .contact-info i {
+      margin-right: 10px;
+      color: var(--highlight);
+    }
+
+    form {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      box-shadow: 0 0 10px rgba(15, 187, 255, 0.1);
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      background: #0a2b3d;
+      border: none;
+      border-radius: 5px;
+      color: var(--text-light);
+      font-size: 1rem;
+    }
+
+    form button {
+      background: var(--highlight);
+      color: var(--dark-bg);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    form button:hover {
+      background: #00a6e0;
+    }
+
+    .map-container {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Port<span>folio</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-container">
+    <div class="hero-content">
+      <h1>Contact Me</h1>
+
+      <div class="contact-info">
+        <p><i class="fa-solid fa-envelope"></i> manojprajapati97563684@gmail.com</p>
+        <p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/manojprajapati</p>
+        <p><i class="fa-solid fa-phone"></i> +91-9756368492</p>
+      </div>
+
+      <!-- Contact Form -->
+      <form action="https://formsubmit.co/manojprajapati97563684@gmail.com" method="POST">
+        <!-- Replace with your real email -->
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+  
+        <!-- Optional: thank you redirect page -->
+        <input type="hidden" name="_next" value="thankyou.html" />
+        <input type="hidden" name="_captcha" value="false" />
+  
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Google Map -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.5509644192395!2d75.7881235!3d26.9133131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3c59b1a8a5f%3A0x2e512c30f612cf0f!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1611111111111"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
